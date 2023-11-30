@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="todoHeader">
+        <form class="todoInput" for="todo" name="todoInput">
+            <h1 class="todoHead">What do you want to do?</h1>
+            <p class="inputText">What do i want to do?</p>
+                <label for="inputTodo">
+                    <input id="inputTodo" class="input inputTodo" name="inputTodo" type="text" placeholder="Type what you want to do.." title="inputTodo" required>
+                </label>
+            <p class="inputText text2">Date</p>
+            <div class="inputTimeAndDate">
+                <label for="inputDate">
+                    <input id="inputDate" class="input inputDate" name="inputTodoDate" type="date" title="inputDate" required>
+                </label>
+            </div>
+            <div class="buffer">
+                <input id="submit" class="submitBtn" name="submit" type="submit" title="submit">
+            </div>
+        </form>
+    </header>
+    
+    <main id="todoListBody" class="todoListBody">
+        <form id="todoList" class="todoList" for="todoList" name="todoList">
+            <div class="todoListHeadContainer">
+                <h1 class="todoListHead">List Of Your TodoList</h1>
+                <div class="searchContainer">
+                    <input id="search" name="search" class="inputSearch" type="text" placeholder="search" title="inputSearch">
+                    <input id="searchBtn" class="searchBtn" type="button" value="Search" title="searchBtn">
+                </div>
+            </div>
+            <div id="bodyContainer">
+                <!-- <div id="listTodoContainer" class="listTodoContainer">
+                    <input id="done" class="doneBtn" type="button" value="Done" title="doneBtn">
+                        <div id="listTodo" class="listTodo">    
+                            <p id="todoContent" class="content">Todo Content</p>
+                            <p id="Date" class="timeAndDate">Date</p>
+                        </div>
+                </div> -->
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h1 class="footerText">Develop by Fedry Alvindra</h1>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
